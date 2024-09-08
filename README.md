@@ -1,4 +1,4 @@
-# Mohit Rajput | Portfolio
+# Mayank Singh | Portfolio
 
 Welcome to my portfolio website! This repository contains the code for my personal portfolio built using React.
 
@@ -26,8 +26,6 @@ Here are some of the skills and technologies I'm proficient in:
 
 Feel free to reach out to me if you have any questions or feedback!
 
-Email: [999mohitrajput@gmail.com](mailto:999mohitrajput@gmail.com)
+Email: [tomarmayank219@gmail.com]
 
-## License
 
-This project is licensed under the [MIT License](LICENSE).
