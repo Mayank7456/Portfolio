@@ -1,0 +1,99 @@
+.errorPage {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    color: black;
+}
+
+.errorContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.errorEmote {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    font-size: 10rem;
+    line-height: 140px;
+    text-align: center;
+    background-size: cover;
+    color: var(--primary);
+}
+
+.errorEmote::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(2.4);
+    -ms-transform: scale(2.4);
+    transform: scale(2.4);
+    border-radius: 50%;
+    /* background-color: #f2f5f8; */
+    background: var(--gradient11);
+    z-index: -1;
+}
+
+.errorContent {
+    position: relative;
+    left: 180px;
+    width: 60%;
+}
+
+.errorContent h1 {
+    font-family: nunito, sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+    /* color: #151723; */
+    color: white;
+    text-transform: uppercase;
+}
+
+.errorContainer h2 {
+    font-family: nunito, sans-serif;
+    font-size: 21px;
+    font-weight: 400;
+    margin: 0;
+    text-transform: uppercase;
+    color: whitesmoke;
+}
+
+.errorContent p {
+    font-family: nunito, sans-serif;
+    color: #999fa5;
+    font-weight: 400;
+}
+
+.errorContent a{
+    font-family: nunito, sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    border-radius: 40px;
+    text-decoration: none;
+    color: var(--primary);
+}
+
+@media screen and (max-width: 900px) {
+    .errorEmote{
+        font-size: 8rem;
+    }
+    .errorContainer {
+        position: absolute;
+        top: 30vh;
+        width: 100%;
+    }
+    .errorContent {
+        left: 15px;
+        top: 140px;
+        width: 90%;
+    }
+}
