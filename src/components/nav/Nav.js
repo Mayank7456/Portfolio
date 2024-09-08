@@ -86,7 +86,7 @@ function Nav() {
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.instagram.com/_mohit_rajputt?igsh=d3ZyNWl6MTQ5Z3Nr" target="_blank" rel="noopener noreferrer" >
+                        <a href="https://www.instagram.com/mayank_singh_tomar____" target="_blank" rel="noopener noreferrer" >
                             <i className="fa-brands fa-instagram"></i>
                         </a>
                     </li>
