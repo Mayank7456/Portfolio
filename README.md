@@ -4,7 +4,7 @@ Welcome to my portfolio website! This repository contains the code for my person
 
 ## About
 
-I am a MERN stack and software developer passionate about creating innovative and user-friendly web applications. This portfolio showcases some of my projects and skills.
+I am a MERN stack developer passionate about creating innovative and user-friendly web applications. This portfolio showcases some of my projects and skills.
 
 ## Skills
 
