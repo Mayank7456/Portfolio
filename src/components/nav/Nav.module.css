@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+
+nav {
+    width: auto;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background-dark);
+    background: var(--gradient0);
+    overflow: hidden;
+    padding: 0 23px;
+}
+
+.logoContainer {
+    min-width: 150px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    user-select: none;
+}
+
+.logo img {
+    width: auto;
+    height: 60px;
+    position: relative;
+    z-index: -1;
+    background: var(--background-dark);
+    
+}
+
+.navList {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+}
+
+.navList li {
+    margin: 0 8px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.navList li a {
+    cursor: pointer;
+    font-size: large;
+    text-decoration: none;
+    color: var(--text-color-1);
+    width: 155px;
+    height: 69px;
+    line-height: 65px;
+}
+
+.navList li a img {
+    width: 30px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.navList li a span {
+    position: relative;
+    top: 7px;
+}
+
+.menu {
+    display: none;
+    align-items: center;
+    overflow: hidden;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.menuContainer input {
+    display: none;
+}
+
+.menuContainer label {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    cursor: pointer;
+}
+
+.menuList,
+.menuButtons ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menuList li {
+    width: 40px;
+    background: rgb(25, 34, 38);
+    background: linear-gradient(90deg, rgba(25, 34, 38, 1) 0%, rgba(223, 218, 218, 1) 100%);
+    height: 4px;
+    margin: 6px 0;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.menuList li:nth-child(3) {
+    width: 25px;
+}
+
+/* rotate on click */
+
+.inputMenu[type="checkbox"]:checked~ul li:nth-child(1) {
+    transform: translateY(13px) rotate(45deg);
+}
+
+.inputMenu[type="checkbox"]:checked~ul li:nth-child(2) {
+    visibility: hidden;
+    transition: none;
+}
+
+.inputMenu[type="checkbox"]:checked~ul li:nth-child(3) {
+    width: 40px;
+    transform: translateY(-13px) rotate(-45deg);
+}
+
+.menu img {
+    width: 45px;
+}
+
+/* mobile menu */
+
+.menuButtons {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    background-color: black;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+.menuButtons ul li {
+    height: 32px;
+    margin: 12px 0;
+}
+
+.menuButtons ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.renderContent {
+    position: fixed;
+    top: 85px;
+    left: 11.5vw;
+    width: 87vw;
+    height: 85vh;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .navList {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    nav {
+        backdrop-filter: blur(0px);
+        background: none;
+    }
+
+    .renderContent {
+        top: 75px;
+        position: unset;
+        overflow: unset;
+        left: 0;
+        width: 100%;
+    }
+}
+
+.renderContent::-webkit-scrollbar {
+    scroll-behavior: smooth;
+    width: 3px;
+}
+
+.renderContent::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.renderContent::-webkit-scrollbar-thumb {
+    background: #03131acc;
+}
+
+.mobileFooter {
+    display: none;
+}
+
+@media screen and (max-width: 700px) {
+    .mobileFooter {
+        display: block;
+    }
+
+    footer div:nth-child(1) {
+        visibility: hidden;
+    }
+}
+
+.mobileFooter ul {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.8rem;
+}
+
+.mobileFooter ul li{
+    height: auto;
+    margin: 12px 0 32px 0;
+}
+
+.mobileFooter p {
+    text-align: center;
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 32px 0;
+    font-weight: 300;
+}
+
+.mobileFooter i {
+    color: rgba(255, 255, 255, 0.8);
+}

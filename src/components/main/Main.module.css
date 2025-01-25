@@ -1,0 +1,676 @@
+/* Style for Intro-section  */
+
+section {
+    margin-bottom: 12px;
+}
+
+.introSection {
+    min-height: 350px;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px;
+    backdrop-filter: blur(0px);
+    background: var(--gradient7);
+    border: .75px solid rgba(252, 252, 252, .05);
+}
+
+.userImage {
+    width: 20%;
+    min-width: 200px;
+    background: url('../../assets/user.png') center/cover no-repeat;
+    mix-blend-mode: lighten;
+}
+
+.quickDetails {
+    width: 73%;
+    display: flex;
+    flex-direction: column;
+}
+
+.quickLink {
+    border: .75px solid rgba(252, 252, 252, .05);
+    -webkit-backdrop-filter: blur(30px);
+    backdrop-filter: blur(30px);
+    background: var(--gradient5);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-bottom: 10px;
+    gap: 10px;
+    padding: 10px;
+}
+
+.quickLink div {
+    background: var(--gradient5);
+    border: .75px solid rgb(252 252 252 / 5%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.status span,
+.currentTime i {
+    margin-right: 20px;
+    color: var(--primary);
+}
+
+.contactMe span {
+    margin-left: 6px;
+    color: var(--primary);
+}
+
+.contactMe p a {
+    text-decoration: none;
+    color: white;
+}
+
+.contactMe p:hover a,
+.contactMe p:hover {
+    color: var(--primary);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .userImage {
+        display: none;
+    }
+    .quickDetails {
+        width: auto;
+    }
+}
+
+.available {
+    width: 6px;
+    height: 6px;
+    background: #00A34C;
+    border-radius: 50%;
+    position: relative;
+    flex: none;
+}
+
+.available::before {
+    content: '';
+    background: rgb(0, 163, 76);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    animation: onlineAnim 1s infinite linear;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: onlineAnim;
+}
+
+@keyframes onlineAnim {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(5);
+        opacity: 0;
+    }
+}
+
+.aboutMe {
+    display: flex;
+    justify-content: space-between;
+}
+
+.aboutMe .intro,
+.aboutMe .address {
+    background: var(--gradient9);
+    border: .75px solid rgb(252 252 252 / 5%);
+    padding: 22px;
+}
+
+.intro {
+    width: 60%;
+    backdrop-filter: blur(30px);
+}
+
+.intro p {
+    font-size: 13px;
+    line-height: 26.7px;
+    letter-spacing: 0.23px;
+    margin-bottom: 8px;
+    font-weight: 300;
+    text-align: justify;
+    color: rgb(188 188 188 / 70%);
+    user-select: none;
+}
+
+.intro h2 {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 8px 0;
+    letter-spacing: -0.75px;
+    line-height: 1;
+}
+
+.address {
+    width: 39%;
+    backdrop-filter: blur(0px);
+    position: relative;
+    overflow: hidden;
+}
+
+.addressContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.addressContainer div {
+    background: var(--gradient2);
+    border: .75px solid rgb(252 252 252 / 5%);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    padding: 12px 22px;
+}
+
+.country i {
+    color: var(--primary);
+    margin-right: 8px;
+}
+
+.circle {
+    position: absolute;
+    width: 163%;
+    height: 163%;
+    bottom: -100%;
+    right: -100%;
+    border-radius: 50%;
+    background-color: var(--dark);
+    box-shadow: 0px 1px 20px 0px var(--primary);
+}
+
+@media screen and (max-width: 700px) {
+    .aboutMe {
+        flex-direction: column;
+    }
+
+    .intro {
+        width: 100%;
+    }
+
+    .address {
+        width: 100%;
+    }
+
+    .circle {
+        display: none;
+    }
+    .quickLink {
+        padding: 8px;
+    }
+    
+    .quickLink div p {
+        margin: 8px 0;
+        font-size: 1.8vw;
+    }
+
+    .available {
+        width: 3px;
+        height: 3px;
+    }
+
+    .currentTime i {
+        font-size: 0.5rem;
+        margin: 5px;
+    }
+}
+
+/*  */
+
+.projectDetails {
+    text-align: center;
+    padding: 22px;
+    position: relative;
+    background: var(--gradient11);
+    border: .75px solid rgb(252 252 252 / 5%);
+    cursor: pointer;
+    z-index: 1;
+}
+
+.projectDetails i {
+    background: var(--gradient2);
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    font-size: 32px;
+    color: var(--primary);
+    z-index: 10;
+    filter: blur(.5px);
+}
+
+
+
+/* Style for Skill Component  */
+
+.skillSection {
+    padding: 18px;
+    backdrop-filter: blur(0px);
+    background: var(--gradient7);
+    border: .75px solid rgba(252, 252, 252, .05);
+}
+
+.skillHeader {
+    border: .75px solid rgb(252 252 252 / 5%);
+    backdrop-filter: blur(30px);
+    background: var(--gradient8);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.headerContent p {
+    margin: 8px;
+    padding: 4px 22px;
+}
+
+.headerContent:nth-child(1) {
+    border: .75px solid rgb(252 252 252 / 5%);
+    background: var(--gradient2);
+}
+
+.skillContent {
+    margin-top: 22px;
+    padding: 22px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    border: .75px solid rgb(252 252 252 / 5%);
+    background: var(--gradient8);
+    backdrop-filter: blur(30px);
+    position: relative;
+}
+
+.extend{
+    display: none;
+}
+
+.extendLabel {
+    display: none;
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.box{
+    margin-bottom: 18px;
+}
+
+.aboutSkills{
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 18px;
+}
+
+.skillIcon{
+    width: 60px;
+    height: 100%;
+    text-align: center;
+    line-height: 60px;
+    background-color: black;
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 900;
+}
+
+.skillName{
+    text-indent: 1cap;
+}
+
+.skillName h3{
+    margin: 0 0 3px 0;
+}
+.skillName p{
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.skillTotal {
+    border: .75px solid rgb(252 252 252 / 5%);
+    background: var(--gradient8);
+    backdrop-filter: blur(30px);
+    height: 20px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.skillValue {
+    height: 100%;
+    background-color: var(--primary);
+}
+
+@media screen and (max-width: 700px) {
+    .skillContent {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 22px 22px 82px 22px;
+    }
+    .skillIcon {
+        background-color: white;
+        color: black;
+        border-radius: 6px;
+    }
+    .skillTotal{
+        height: 12px;
+    }
+    .extendLabel{
+        display: block;
+    }
+    .box:nth-child(n + 7) {
+        display: none;
+    }
+    .extend[type="checkbox"]:checked ~ .box {
+        display: block;
+    }
+}
+
+
+/* Style for background section */
+
+.backgroundSection {
+    backdrop-filter: blur(0px);
+    background: var(--gradient7);
+    border: .75px solid rgba(252, 252, 252, .05);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 18px;
+}
+
+.education,
+.experience {
+    box-sizing: border-box;
+    border: .75px solid rgb(252 252 252 / 5%);
+    background: var(--gradient9);
+    backdrop-filter: blur(0px);
+    padding: 14px;
+}
+
+.educationHeader,
+.experienceHeader {
+    border: .75px solid rgb(252 252 252 / 5%);
+    background: var(--gradient2);
+    width: fit-content;
+    margin: 4px 0 8px 0;
+    padding: 8px 12px;
+}
+
+.eduContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    margin-left: 14px;
+}
+
+.eduContentContainer {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 12px 24px;
+}
+
+.eduLogo {
+    margin-right: 8px;
+}
+
+.eduInfo p {
+    margin: 4px;
+    font-size: l;
+    color: rgb(188 188 188 / 70%);
+}
+
+.eduInfo h3 {
+    margin: 4px;
+}
+
+.fontLarger {
+    font-size: large;
+}
+
+.trackPath {
+    position: absolute;
+    left: 0;
+    width: 0;
+    border: 1px dotted rgba(71, 71, 71, 0.2);
+    height: 65%;
+}
+
+.trackStart {
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    filter: blur(1.5px);
+    border-radius: 50%;
+    position: absolute;
+    top: -5px;
+    left: -5px;
+}
+
+.trackStop {
+    filter: blur(1.5px);
+    width: 10px;
+    height: 10px;
+    background-color: var(--primary);
+    border-radius: 50%;
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+}
+
+@media screen and (max-width: 900px) {
+    .backgroundSection {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .eduInfo h3 {
+        font-size: 4.5vw;
+    }
+
+    .eduInfo p {
+        font-size: 3vw;
+    }
+
+    .eduLogo img {
+        width: 50px;
+    }
+}
+
+/* Style for contact section */
+
+.connect {
+    padding: 18px;
+    border: .75px solid rgba(252, 252, 252, 0.05);
+    background: var(--gradient7);
+    backdrop-filter: blur(0px);
+}
+
+.connectHeader {
+    border: .75px solid rgb(252 252 252 / 5%);
+    background: var(--gradient8);
+    backdrop-filter: blur(30px);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.connectHeader div {
+    border: .75px solid rgb(252 252 252 / 5%);
+    background: var(--gradient2);
+    padding: 8px 22px;
+}
+
+.connectContent {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 12px;
+}
+
+.form {
+    background: var(--gradient9);
+    backdrop-filter: blur(30px);
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border: .75px solid rgb(252 252 252 / 5%);
+    padding: 23px;
+}
+
+.form input,
+.form textarea,
+.form button {
+    margin-bottom: 24px;
+    background-color: transparent;
+    border: .75px solid rgb(252 252 252 / 5%);
+    color: gray;
+    background: var(--gradient16);
+    padding: 13px;
+}
+
+.form input:focus-visible,
+.form textarea:focus-visible {
+    outline: 0.5px solid rgba(0, 170, 255, 0.5);
+}
+
+.form input {
+    height: 45px;
+}
+
+.form textarea {
+    max-width: 99%;
+    height: 100px;
+}
+
+.form button {
+    height: 50px;
+    font-weight: 900px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+.form button:hover{
+    background-color: var(--primary);
+    color: black;
+}
+
+.connectInfoBox {
+    width: 38%;
+    border: .75px solid rgb(252 252 252 / 5%);
+    padding: 22px;
+    box-sizing: border-box;
+    background: var(--gradient9);
+    backdrop-filter: blur(0px);
+}
+
+@media screen and (max-width: 900px) {
+    .connectContent {
+        flex-direction: column-reverse;
+    }
+
+    .form {
+        width: 100%;
+        margin-top: 12px;
+    }
+
+    .connectInfoBox {
+        width: 100%;
+    }
+}
+
+.addressHead {
+    width: fit-content;
+    border: .75px solid rgb(252 252 252 / 5%);
+    padding: 8px 12px;
+    background: var(--gradient2);
+}
+
+.addressContentContainer {
+    margin-top: 14px;
+    max-height: 85%;
+    border: .75px solid rgb(252 252 252 / 5%);
+    padding: 32px;
+}
+
+.addressContentContainer div:nth-child(1) {
+    margin-bottom: 18px;
+}
+
+.addressInfoContainer {
+    display: flex;
+    position: relative;
+}
+
+.connectInfoHead {
+    width: 30%;
+}
+
+.addressIcon {
+    background: linear-gradient(-90deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0) 100%);
+    backdrop-filter: blur(15px);
+    border: .75px solid rgb(252 252 252 / 5%);
+    width: 60%;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+    line-height: 50px;
+}
+.addressIcon i{
+    color: var(--primary);
+}
+
+.addressinfo {
+    background: var(--gradient9);
+    border: .75px solid rgb(252 252 252 / 5%);
+    width: 70%;
+    padding: 0 8px 4px 12px;
+    overflow: auto;
+}
+
+.addressinfo p:not(:first-child) {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 4px 0;
+}
+
+.addressinfo::before {
+    content: "";
+    border-bottom: 1px dashed rgba(0, 170, 255, .2);
+    border-left: 1px dashed rgba(0, 170, 255, .2);
+    position: absolute;
+    top: 52px;
+    right: 70%;
+    height: 24px;
+    width: 44px;
+    box-sizing: border-box;
+    border-radius: inherit;
+    pointer-events: none;
+}
+
+@media screen and (max-width: 700px) {
+    section{
+        margin-bottom: 0;
+    }
+    .introSection, .backgroundSection, .connect, .skillSection {
+      background: none;
+      border: none;
+      padding: 8px 12px;
+    }
+}

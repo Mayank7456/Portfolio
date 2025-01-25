@@ -1,0 +1,83 @@
+:root {
+  --background-dark: #030d12;
+  --text-color-1: #ffffff;
+  --dark: #040404;
+  --light: #f5f5f5;
+  --primary: #00aaff;
+  --heading: #F9F9F9;
+  --bodyColor: #8E8E8E;
+  --gradient0: linear-gradient(90deg, rgba(3, 13, 18, 1) 0%, rgba(4, 4, 4, 1) 100%);
+  --gradient1: radial-gradient(51% 51% at 49% 48%, rgba(253, 253, 253, .05) 0%, rgba(253, 253, 253, 0) 100%);
+  --gradient2: linear-gradient(.0000026635723315848736deg, rgba(0, 170, 255, .05) 0%, rgba(182, 102, 195, .05000000074505806) 100%);
+  --gradient3: linear-gradient(270deg, rgba(0, 170, 255, 0.05) 0%, rgba(0, 170, 255, 0.04) 100%);
+  --gradient5: linear-gradient(-90deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
+  --gradient6: linear-gradient(70deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
+  --gradient7: linear-gradient(180deg, rgba(0, 163, 255, .05) 0%, rgba(0, 163, 255, .019999999552965164) 100%);
+  --gradient8: linear-gradient(78deg, rgb(0 170 255 / 4%), rgb(0 170 255 / 2%));
+  --gradient9: linear-gradient(-89.99999881140911deg, rgba(0, 170, 255, .04) 0%, rgba(0, 170, 255, .019999999552965164) 100%);
+  --gradient10: linear-gradient(180deg, rgba(0, 163, 255, 0.04) 0%, rgba(0, 163, 255, 0.02) 100%);
+  --gradient11: linear-gradient(180deg, rgba(0, 163, 255, 0.05) 0%, rgba(0, 163, 255, 0.02) 100%);
+  --gradient12: linear-gradient(270deg, rgba(0, 170, 255, 0.04) 0%, rgba(0, 170, 255, 0.02) 100%);
+  --gradient13: linear-gradient(270deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0.00) 100%);
+  --gradient14: linear-gradient(-90deg, rgba(0, 170, 255, 0.02) 0%, rgba(0, 170, 255, 0) 100%);
+  --gradient15: linear-gradient(0deg, rgba(0, 163, 255, 0.04) 0%, rgb(182 103 195 / 5%) 100%);
+  --gradient16: linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05));
+  --gradient18: linear-gradient(to right, rgba(0, 170, 255, 0.01), rgba(0, 170, 255, 0.05)) transparent;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--dark);
+  color: var(--text-color-1);
+}
+
+a.navLinkActive {
+  box-sizing: border-box;
+  border-bottom: 2px solid var(--primary);
+  border-radius: 1px;
+}
+
+/* Footer */
+
+footer {
+  border-top: 1px solid rgba(252, 252, 252, 0.1);
+  display: flex;
+  justify-content: space-between;
+  margin-top: 14px;
+  position: relative;
+  height: 50px;
+  line-height: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: small;
+  padding: 0 12px;
+}
+
+@media screen and (max-width: 700px) {
+  footer{
+    display: none;
+  }
+}
+
+footer div span {
+  font-size: 1rem;
+  margin: 0 6px;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: var(--primary);
+}
+
