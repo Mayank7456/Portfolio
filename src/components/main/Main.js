@@ -157,9 +157,12 @@ function Main() {
                         <div className={styles.trackStart} ></div>
                     </div>
                     <div className={styles.eduContentContainer} >
+                    <div className={styles.eduLogo} >
+                            <img src="https://play-lh.googleusercontent.com/-dLfjVZFY-7InaU3y1lpKPowigZec_7a7j0clwE4hnKnBuDRRgv-nDqW1JNCMkQelJcN" width="80px" alt="add-link" />
+                        </div>  
                         
                         <div className={styles.eduInfo} >
-                            <p>July-Dec 2023</p>
+                            <p>Sep 2024 - Fab 2025</p>
                             <h3>Unique Computer Solution</h3>
                             <p>MERN Stack Developer Intern</p>
                         </div>
